@@ -65,6 +65,7 @@ GEM
     execjs (2.0.2)
     gherkin (2.12.2)
       multi_json (~> 1.3)
+    gmaps4rails (2.1.2)
     haml (4.0.5)
       tilt
     hike (1.2.3)
@@ -172,6 +173,7 @@ DEPENDENCIES
   cucumber-rails
   cucumber-rails-training-wheels
   database_cleaner
+  gmaps4rails
   haml
   jquery-rails
   launchy
