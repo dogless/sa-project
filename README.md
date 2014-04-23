@@ -6,4 +6,4 @@ APIs
 ====
 [gmaps4rails](https://github.com/apneadiving/Google-Maps-for-Rails)
 [OCCT Schedule](https://occtransport.org/index.php/schedules#)
-
+[Geocoder](http://www.rubygeocoder.com/)
