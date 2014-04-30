@@ -8,7 +8,7 @@ gem 'sqlite3'
 
 # for Heroku deployment - as described in Ap. A of ELLS book
 group :development, :test do
-  gem 'ruby-debug19'
+  gem 'debugger'
   gem 'database_cleaner'
   gem 'capybara'
   gem 'launchy'
