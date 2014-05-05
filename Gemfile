@@ -30,6 +30,7 @@ group :assets do
   gem 'sass-rails', '~> 3.2.6'
   gem 'coffee-rails', '~> 3.2.2'
   gem 'uglifier'
+  gem 'bootstrap-sass', '~> 3.1.1'
 end
 
 gem 'jquery-rails'
