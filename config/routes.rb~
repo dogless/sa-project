@@ -3,7 +3,7 @@ SaProject::Application.routes.draw do
   root :to => 'map#index'
 
 
-  match '/search' =>'map#show'
+  get "map/show"
   
 
   # The priority is based upon order of creation:

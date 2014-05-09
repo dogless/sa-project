@@ -32,6 +32,6 @@
 	top: 80%;
 	right:5%;
 	width:200px;
-	height:100px;
+	height:200px;
 	z-index:1;	
 }

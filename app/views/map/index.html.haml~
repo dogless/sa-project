@@ -28,7 +28,7 @@
 		= field_set_tag do
 			= label_tag :dest, 'Destination:'
 			=text_field_tag :dest
-			=submit_tag 'Search'
+			=submit_tag 'Search',:id=>'add_marker'
 			
 
 

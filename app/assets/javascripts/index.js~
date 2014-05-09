@@ -11,6 +11,16 @@ handler.buildMap({
 			{ url: "https://sites.google.com/site/dougjchau/Bus%2015.kml?attredirects=0&d=1"}
 		);
 	}
+        function(){
+		 var mapLabel = new MapLabel({
+          		text: 'Test',
+          		position: new google.maps.LatLng(34.03, -118.235),
+          		map: Google,
+          		fontSize: 35,
+          		align: 'right'
+        	});
+        	mapLabel.set('position', new google.maps.LatLng(42.088824, -75.966983));
+	}
 );
 
 
