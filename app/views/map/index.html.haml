@@ -16,6 +16,10 @@
 				%li
 					%a{:href => "#contact"} Contact
 
+.input-gmaps-autocomplete
+	%input{:id => 'gmaps-input-address', :class => 'form-control search', :type => 'text'}
+	#gmaps-error
+
 .mapbox
 	#map
 	= javascript_include_tag "index"

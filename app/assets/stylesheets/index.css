@@ -9,3 +9,11 @@
 	height: 100%;
 	width: 100%;
 }
+
+.search{
+	position:absolute;
+	margin-top:100px;
+	width: 200px;
+	height: 50px;
+	z-index: 1;
+}
