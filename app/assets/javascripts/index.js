@@ -8,7 +8,7 @@ handler.buildMap({
 	},
 	function(){
 		var kmls = handler.addKml(
-			{ url: "https://sites.google.com/site/dougjchau/Bus%2015.kml?attredirects=0&d=1"}
+			{ url: "https://sites.google.com/site/dougjchau/Bus%20Outbound%2015.kml?attredirects=0&d=1"}
 		);
 	}
 );
