@@ -35,7 +35,7 @@ end
 
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'gmaps-autocomplete-rails'
+gem 'gmaps-autocomplete-rails', '~> 0.1.3.1'
 gem 'haml'
 gem 'gmaps4rails'
 

@@ -175,7 +175,7 @@ DEPENDENCIES
   cucumber-rails-training-wheels
   database_cleaner
   debugger
-  gmaps-autocomplete-rails
+  gmaps-autocomplete-rails (~> 0.1.2.1)
   gmaps4rails
   haml
   jquery-rails
