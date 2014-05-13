@@ -10,16 +10,10 @@
 		.collapse.navbar-collapse
 			%ul.nav.navbar-nav
 				%li.active
-					%a{:href => "#"} Home
-				%li
-					%a{:href => "#about"} About
-				%li
-					%a{:href => "#contact"} Contact
-
-
+					%a{:href => "#"} Search
+			%form{:class => 'navbar-form navbar-left input-gmaps-autocomplete'}
+				%input{:id => 'gmaps-input-address', :class => 'form-control search', :type => 'text', :placeholder => 'Destination', :autocomplete => 'off', 'aria-autocomplete' => 'list', 'aria-haspopup' => 'true'}
 
 .mapbox
-	.input-gmaps-autocomplete
-		%input{:id => 'gmaps-input-address', :class => 'form-control search', :type => 'text', :placeholder => 'Destination', :autocomplete => 'off', 'aria-autocomplete' => 'list', 'aria-haspopup' => 'true'}
 	#map
 	= javascript_include_tag "index"

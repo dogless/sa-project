@@ -89,6 +89,10 @@ GmapsCompleter = (function() {
       center: latlng,
       mapTypeId: mapType
     };
+    // kml
+    kmlLayer = new google.maps.KmlLayer({
+      url: "https://sites.google.com/site/dougjchau/Bus%20Outbound%2015.kml?attredirects=0&d=1"
+    });
     this.debug('map options', mapOptions);
     this.geocoder = new google.maps.Geocoder();
     self = this;
@@ -100,6 +104,8 @@ GmapsCompleter = (function() {
       return;
     }
     this.map = new google.maps.Map(this.mapElem, mapOptions);
+    // kml
+    kmlLayer.setMap(this.map);
     if (!this.map) {
       return;
     }
