@@ -1,3 +1,14 @@
+var completer;
+
+completer = new GmapsCompleter({
+	inputField: '#gmaps-input-address',
+	errorField: '#gmaps-error'
+});
+
+completer.autoCompleteInit({
+	country: "us"
+});
+
 handler = Gmaps.build('Google');
 handler.buildMap({ 
 		internal: {id: 'map' },
@@ -8,22 +19,7 @@ handler.buildMap({
 	},
 	function(){
 		var kmls = handler.addKml(
-			{ url: "https://sites.google.com/site/dougjchau/Bus%2015.kml?attredirects=0&d=1"}
+			{ url: "https://sites.google.com/site/dougjchau/Bus%20Outbound%2015.kml?attredirects=0&d=1"}
 		);
 	}
 );
-
-/*
-jQuery(function() {
-	var completer;
-
-	completer = new GmapsCompleter({
-		inputField: '#gmaps-input-address',
-		errorField: '#gmaps-error'
-	});
-
-	completer.autoCompleteInit({
-		country: "us"
-	});
-});
-*/
