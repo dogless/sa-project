@@ -43,7 +43,7 @@ GmapsCompleter = (function() {
   }
 
   GmapsCompleter.prototype.init = function(opts) {
-    var callOpts, completerAssistClass, error, lat, latlng, lng, mapElem, mapOptions, mapType, pos, self, zoomLevel;
+    var callOpts, completerAssistClass, error, lat, latlng, lng, mapElem, mapOptions, mapType, pos, self, zoomLevel, kml;
     opts = opts || {};
     callOpts = $.extend(true, {}, opts);
     this.debugOn = opts['debugOn'];
@@ -67,6 +67,7 @@ GmapsCompleter = (function() {
     pos = opts['pos'];
     lat = pos[0];
     lng = pos[1];
+    kml = opts['kml'];
     mapType = opts['mapType'];
     mapElem = null;
     this.mapElem = $("gmaps-canvas");
@@ -89,10 +90,6 @@ GmapsCompleter = (function() {
       center: latlng,
       mapTypeId: mapType
     };
-    // kml
-    kmlLayer = new google.maps.KmlLayer({
-      url: "https://sites.google.com/site/dougjchau/Bus%20Outbound%2015.kml?attredirects=0&d=1"
-    });
     this.debug('map options', mapOptions);
     this.geocoder = new google.maps.Geocoder();
     self = this;
@@ -105,7 +102,12 @@ GmapsCompleter = (function() {
     }
     this.map = new google.maps.Map(this.mapElem, mapOptions);
     // kml
-    kmlLayer.setMap(this.map);
+    if (kml){
+       kmlLayer = new google.maps.KmlLayer({
+        url: kml
+      });
+      kmlLayer.setMap(this.map);
+    }
     if (!this.map) {
       return;
     }
